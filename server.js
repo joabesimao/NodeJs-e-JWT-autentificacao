@@ -1,8 +1,9 @@
-const app = require('./app');
+require("dotenv").config();
+const app = require("./app");
 const port = 6000;
-const db = require('./database');
+const db = require("./database");
 
-const routes = require('./rotas');
+const routes = require("./rotas");
 routes(app);
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
